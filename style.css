@@ -1,0 +1,160 @@
+* {
+    box-sizing:border-box;
+}
+body {
+    background-image:url('./Images/Bowen-University-1080x570.jpeg');
+    background-size:cover;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    min-height:100vh;
+    margin:0;
+    position:relative;
+    font-family:Verdana, Tahoma, sans-serif;
+}
+
+.header {
+    background:transparent;
+    text-align:center;
+    font-size:40px;
+    color:darkblue;
+    text-transform:uppercase;
+    text-shadow:5px 5px 30px white;
+    font-weight:bolder;
+    letter-spacing:8px;
+    background-color:white;
+    line-height:80px
+}
+.nextheader {
+    text-align:center;
+    font-size:25px;
+    letter-spacing:3px;
+    color:darkblue
+}
+
+.todo {
+    position:absolute;
+    margin-left:15%;
+    top:25%;
+    text-transform:capitalize;
+    letter-spacing:5px;
+    font-size:20px;
+    background-color:white;
+    padding:10px;
+    border-radius:10px
+}
+.place {
+    position:absolute;
+    top:35%;
+    margin-left:15%;
+}
+.place form #firstinput {
+    padding:18px;
+    width:600px;
+    border:1px solid darkblue;
+    background-color:darkblue;
+    border-radius:10px;
+    outline:none;
+    color:white;
+}
+.place form #firstinput::placeholder{
+    color:white;
+}
+
+.place form #button {
+    padding:18px;
+    width:100px;
+    border:1px solid darkblue;
+    background-color:darkblue;
+    border-radius:10px;
+    outline:none;
+    color:white;
+    margin-left:20px;
+    cursor:pointer;
+}
+.middlemiddle {
+    position:absolute;
+    top:50%;
+    margin-left:15%;
+    color:white;
+    font-weight:bolder;
+    font-size:25px
+}
+
+main {
+    position:absolute;
+    top:58%;
+    margin-left:15%;
+    z-index:1
+}
+main #one {
+    background-color:thistle;
+    padding:15px;
+    border-radius:10px;
+
+}
+#one .two {
+    display:flex;
+    background-color:darkblue;
+    width:800px;
+    padding:2px;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+#one .two .content .todolist {
+    width:600px;
+    outline:none;
+    background:none;
+    background-color:darkblue;
+    padding:15px;
+    border-radius:10px;
+    border:none;
+    color:white;
+}
+#one .two .actions .edit {
+    color:gray;
+    padding:15px;
+    border:none;
+    background-color:darkblue;
+    cursor:pointer;
+    font-weight:bolder;
+}
+#one .two .actions .delete {
+    color:red;
+    padding:15px;
+    border:none;
+    background-color:darkblue;
+    cursor:pointer;
+    font-weight:bolder;
+    margin-left:30px
+}
+
+.rightside {
+    position:absolute;
+    text-align:center;
+    border:2px solid darkblue;
+    border-radius:10px;
+    width:400px;
+    top:70%;
+    right:15px;
+    padding:10px;
+    background-color:gray;
+}
+.word {
+    font-size:18px;
+    background-color:gray;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+    padding:10px;
+    outline:none;
+    border:none
+}
+
+.hid {
+    line-height:30px;
+    color:lavender;
+    display:none
+}
+.word.hid {
+    display:block;
+}
